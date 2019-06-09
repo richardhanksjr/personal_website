@@ -1,0 +1,322 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
+html{
+    background-color: black;
+}
+/*Create a container for the body content*/
+body{
+    font-family: 'Roboto', sans-serif;
+    margin-right: 2em;
+    margin-left: 2em;
+    width: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Nav bar*/
+.nav-bar{
+    position: fixed;
+    background-color: #444444;
+    margin-top: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    right: 2em;
+    left: 2em;
+    top: 0;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    line-height: 5px;
+    height: 5px;
+    margin-right: 40px;
+}
+
+
+.nav-bar li{
+    display: inline;
+
+}
+
+.nav-bar li.li-left{
+    float: left;
+    margin-left: 10px;
+}
+
+.nav-bar li.li-right{
+     float: right;
+     margin-right: 10px;
+ }
+
+
+.nav-bar li.divider{
+    color: #232323
+}
+
+.nav-bar ul a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar ul a:hover{
+    color: black;
+}
+
+/*My work page styles*/
+
+.container{
+    background-image: url("../images/safar-safarov-1509070-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    border-radius: 0.3em;
+
+}
+
+.container.my-work{
+    text-align: center;
+}
+
+.container #table-container, #music-video-container {
+    background-color: #888888;
+    margin-right: 5em;
+    margin-left: 5em;
+    border-radius: 1em;
+    margin-top: 5em;
+}
+
+#my-work-img-container{
+    text-align: center;
+    margin-top: 4.33em;
+    height: 15%;
+    width: auto;
+
+}
+#my-work-img{
+    width: 15%;
+    float: left;
+    margin-top: 3em;
+    margin-left: 3.5em;
+    border-radius: 50%;
+}
+
+
+.table-container{
+    text-align: center;
+    padding-right: 2em;
+
+}
+
+.table-caption{
+    padding-top: 3em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container table {
+    padding-right: 3em;
+    padding-left: 3em;
+    padding-bottom: 3em;
+    resize: both;
+    overflow: auto;
+}
+
+.container th, #my-work td{
+    padding: 1em;
+}
+
+.container tr:nth-child(even){
+    background-color: #555;
+}
+
+.container th {
+    font-size: 30px;
+}
+
+.table-caption{
+    font-size: 50px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#music-video-container{
+    padding-top: 2em;
+    text-align: center;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    padding-bottom: 5em;
+
+}
+
+#music-title{
+    font-size: 50px;
+}
+
+#music-subtitle{
+    font-size: 30px;
+}
+
+hr{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+video{
+    margin: .5em;
+}
+
+table{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+td{
+    overflow: hidden;
+
+}
+
+video{
+    width: 75%;
+}
+
+/*Index/home*/
+
+
+.profile-pic{
+
+    border-radius: 100%;
+
+    width: 33%;
+    height: auto;
+    right: 0;
+    margin-top: 1em;
+    float: right;
+}
+
+.profile-pic-container{
+    padding-top: 3em;
+    right: 2em;
+
+}
+
+.main-title{
+    padding-top: 3em;
+    font-size: 75px;
+    float: left;
+}
+
+.index.container{
+    padding-bottom: 500px;
+    color: white;
+}
+
+.index.subtitle{
+    padding-top: 7.5em;
+    font-size: 50px;
+
+}
+
+.subtitle-container{
+    padding-top: 4em;
+    font-size: 50px;
+    padding-right: 20em;
+}
+
+#index-contact{
+    font-size: 25px;
+}
+
+#skills-list{
+    list-style: none;
+}
+
+.biography-container p:nth-child(even){
+    color: #232323;
+}
+
+/*Info page*/
+.biography-container{
+    text-align: center;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    background-color: #888888;
+    border-radius: 3em;
+    padding: 2em 3em 5em;
+
+}
+
+.biography-container ul{
+    list-style: none;
+}
+
+#biography-timeline-header{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.biography-container li:nth-child(even){
+    color: #232323;
+}
+
+.biography-bottom{
+    margin-bottom: 5em;
+    border-radius: 3em 3em 0 0;
+}
+/*Media queries*/
+@media only screen and (max-width:620px){
+    .table-caption, td, th{
+        font-size: 16px;
+        font-style: normal;
+    }
+    
+    #my-work-img{
+        visibility: hidden;
+    }
+
+}
+
+
+@media only screen and (max-width:500px){
+    body{
+        margin-right: initial;
+        margin-left: initial;
+    }
+
+    .container{
+        width: 100%;
+        padding: 3em;
+
+    }
+
+    .nav-bar{
+        right: 0;
+        left: 0;
+    }
+
+    #table-container{
+
+        width: 100%;
+    }
+
+    html{
+        background-color: initial;
+    }
+
+    .container #table-container, #music-video-container {
+        background-color: #888888;
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 1em;
+    }
+
+    #my-work-img{
+        visibility: hidden;
+    }
+
+}
+
+
