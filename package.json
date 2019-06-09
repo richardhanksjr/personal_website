@@ -1,0 +1,8 @@
+{
+  "name": "Hanks_Project_Vanilla_JS",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "howler": "^2.1.2"
+  }
+}

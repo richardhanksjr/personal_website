@@ -8,15 +8,16 @@
             src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.core.min.js"></script>
     <title>Richard Hanks</title>
 </head>
 <body>
 <section class="piano left">
-    <div class="key white C"><div class="key-content hidden">Home</div></div>
-    <div class="key black CSharp"><div class="key-content hidden">About</div></div>
-    <div class="key white D"><div class="key-content hidden">Software</div></div>
-    <div class="key black Eb"><div class="key-content hidden">Music</div></div>
-    <div class="key white E"><div class="key-content hidden">Contact</div></div>
+    <div class="key white C"><div id="C" class="key-content hidden">Home</div></div>
+    <div class="key black CSharp"><div id="CS" class="key-content hidden">About</div></div>
+    <div class="key white D"><div id="D" class="key-content hidden">Software</div></div>
+    <div class="key black Eb"><div id="Eb" class="key-content hidden">Music</div></div>
+    <div class="key white E"><div id="E" class="key-content hidden">Contact</div></div>
 </section>
 <section id="main-content">
     <main class="container index">
@@ -40,11 +41,11 @@
     </main>
 </section>
 <section class="piano right">
-    <div class="key white C"><div class="key-content hidden">Home</div></div>
-    <div class="key black CSharp"><div class="key-content hidden">About</div></div>
-    <div class="key white D"><div class="key-content hidden">Software</div></div>
-    <div class="key black Eb"><div class="key-content hidden">Music</div></div>
-    <div class="key white E"><div class="key-content hidden">Contact</div></div>
+    <div class="key white C"><div id="C" class="key-content hidden">Home</div></div>
+    <div class="key black CSharp"><div id="CS" class="key-content hidden">About</div></div>
+    <div class="key white D"><div id="D" class="key-content hidden">Software</div></div>
+    <div class="key black Eb"><div id="Eb" class="key-content hidden">Music</div></div>
+    <div class="key white E"><div id="E" class="key-content hidden">Contact</div></div>
 </section>
 <script src="js/PianoKey.js"></script>
 </body>
