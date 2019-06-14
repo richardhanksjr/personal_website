@@ -7,17 +7,18 @@
      */
 
 body{
-    background-color: red;
+    background-color: #c5171b;
     color: #f6c582;
-    background-image: url("../images/matese-fields-195229-unsplash.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../images/red_wall.jpg");
+    background-repeat: repeatY;
+    /*background-repeat: no-repeat;*/
     background-size: cover;
     font-family: 'Allerta Stencil', sans-serif;
 
 }
 
 .piano.left{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 18.25em;
     bottom: 10em;
@@ -118,7 +119,7 @@ left: -14.5em;
 
 
 .piano.right{
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
 }
@@ -207,6 +208,246 @@ left: -14.5em;
 a{
     text-decoration: none;
 }
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.animated {
+    /*background-image: url(/css/images/logo.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left top;*/
+    /*padding-top:95px;*/
+    /*margin-bottom:60px;*/
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+}
+
+.animated2 {
+    /*background-image: url(/css/images/logo.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left top;*/
+    /*padding-top:95px;*/
+    /*margin-bottom:60px;*/
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+}
+
+.animated3 {
+    /*background-image: url(/css/images/logo.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left top;*/
+    /*padding-top:95px;*/
+    /*margin-bottom:60px;*/
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 2.5s;
+}
+
+.animated4 {
+    /*background-image: url(/css/images/logo.png);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: left top;*/
+    /*padding-top:95px;*/
+    /*margin-bottom:60px;*/
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-delay: 2.5s;
+}
+
+.biography-container{
+    height: 87vh;
+    overflow: auto;
+    position: fixed;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    margin-left: 25%;
+    margin-right: 25%;
+    top: 4em;
+    color: #020202;
+    background-color: #f6c582;
+}
+
+.biography-container h2{
+    text-align: center;
+}
+
+.shadow {
+    -moz-box-shadow:    inset 0 0 20px #000000;
+    -webkit-box-shadow: inset 0 0 20px #000000;
+    box-shadow:         inset 0 0 20px #000000;
+}
+
+.shadow-deep {
+    -moz-box-shadow:    inset 0 0 50px #000000;
+    -webkit-box-shadow: inset 0 0 50px #000000;
+    box-shadow:         inset 0 0 50px #000000;
+}
+
+#console-container{
+    position: absolute;
+    left: 5vw;
+}
+#console{
+    /*position: relative;*/
+    position: absolute;
+    top: 20em;
+    left: 22vw;
+    /*right: 50%;*/
+    background-color: #2b2b2b;
+    padding-left: 0em;
+    padding-right: 0em;
+    /*padding-bottom: 15em;*/
+    color: lawngreen;
+    font-size: 16px;
+
+    display: block;
+    overflow: auto;
+    height: 250px;
+}
+
+#console-header{
+    margin-bottom: .5em;
+    postion: absolute;
+    /*left: -10em;*/
+    /*right: 10em;*/
+    /*left: -50em;*/
+    top: 0;
+    /*left: ;*/
+    /*right: 10em;*/
+    /*padding: 1em 11vw;*/
+    /*width: 75%;*/
+    padding-left: 20vw;
+    padding-right: 25vw;
+    padding-bottom: .5em;
+    background-color: gray;
+    z-index: 1;
+}
+
+#print-skill{
+    left: 3vh;
+}
+
+#sound-button{
+    position: absolute;
+    left: 25vw;
+    top: 10vh;
+    /*width: 8vw;*/
+    /*height: 5vh;*/
+    /*border-radius: 10px;*/
+    /*background-color: blue;*/
+}
+
+.sound-about-page{
+    /*position: absolute;*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+}
+
+#sound-button.about-page-button{
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+/*#sound-button:focus{*/
+    /*outline: 0;*/
+/*}*/
+
+@media only screen and (max-width: 1500px){
+    .right{
+        display: none;
+    }
+
+    .main-content{
+        right: 0;
+    }
+}
+
+
+/*#skills-list li{*/
+    /*animation: slidein 3s ease-in 1s infinite reverse both running;*/
+
+/*}*/
+
+/*@-webkit-keyframes move*/
+/*{*/
+    /*from {*/
+        /*left: 0;*/
+    /*}*/
+    /*to {*/
+        /*left: 50%;*/
+    /*}*/
+/*}*/
+/*@keyframes move*/
+/*{*/
+    /*from {*/
+        /*left: 0;*/
+    /*}*/
+    /*to {*/
+        /*left: 50%;*/
+    /*}*/
+/*}*/
+
+/*#skills-list li {*/
+    /*text-decoration: none;*/
+    /*padding-right: 20px;*/
+    /*left: 50%;*/
+    /*position: absolute;*/
+    /*-webkit-animation: move 5s;*/
+    /*animation: move 5s;*/
+/*}*/
+
+/*@-webkit-keyframes move*/
+/*{*/
+    /*from {*/
+        /*left: 100%;*/
+    /*}*/
+    /*to {*/
+        /*left: 10%;*/
+    /*}*/
+/*}*/
+/*@keyframes move*/
+/*{*/
+    /*from {*/
+        /*left: 100%;*/
+    /*}*/
+    /*to {*/
+        /*left: 10%;*/
+    /*}*/
+/*}*/
+
+/*#skills-list  li{*/
+    /*!*text-decoration: none;*!*/
+    /*!*padding-right: 20px;*!*/
+    /*left: 100%;*/
+    /*!*position: absolute;*!*/
+    /*-webkit-animation: move 5s;*/
+    /*animation: move 5s;*/
+/*}*/
 
 /*Imported from display.css*/
 
